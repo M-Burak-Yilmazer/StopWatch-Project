@@ -59,12 +59,18 @@ document.addEventListener("DOMContentLoaded", function () {
   buttons.addEventListener("click", function (event) {
     clearInterval(time); // Clear the previous interval
 
-    if (event.target.classList.contains("play")) {
+    if (
+      event.target.classList.contains("play") ||
+      event.target.parentNode.classList.contains("play")
+    ) {
       timer = true;
       updateTimer();
     }
 
-    if (event.target.classList.contains("pause")) {
+    if (
+      event.target.classList.contains("pause") ||
+      event.target.parentNode.classList.contains("pause")
+    ) {
       timer = false;
       // Save the current time data when pause is clicked
       count = timeData.count;
@@ -78,7 +84,10 @@ document.addEventListener("DOMContentLoaded", function () {
       } : ${count < 10 ? "0" + count : count} </li> `;
     }
 
-    if (event.target.classList.contains("reset")) {
+    if (
+      event.target.classList.contains("reset") ||
+      event.target.parentNode.classList.contains("reset")
+    ) {
       timer = false;
       count = 0;
       secondsCount = 0;
