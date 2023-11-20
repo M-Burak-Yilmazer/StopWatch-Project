@@ -1,0 +1,42 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.stopwatch {
+  text-align: center;
+}
+
+.show-hours {
+  font-size: 2em;
+  margin-bottom: 10px;
+  border:5px solid black;
+
+}
+
+.controls button {
+  font-size: 1em;
+  margin: 5px;
+  padding: 8px 15px;
+  cursor: pointer;
+}
+
+.controls button#startBtn {
+  background-color: #4caf50;
+  color: white;
+}
+
+.controls button#pauseBtn {
+  background-color: #f44336;
+  color: white;
+}
+
+.controls button#resetBtn {
+  background-color: #008CBA;
+  color: white;
+}

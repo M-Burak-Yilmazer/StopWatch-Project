@@ -1,26 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <div>
-
-        <span class="hours"></span>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="stopwatch">
+      <div class="show-hours">
+        <span class="hours">00</span>
         <span>:</span>
-        <span class="minutes"></span>
+        <span class="minutes">00</span>
         <span>:</span>
-        <span class="seconds"></span>
+        <span class="seconds">00</span>
+        <span>:</span>
+        <span class="microSeconds">000</span>
+      </div>
+    </div>
+    <div class="controls">
+      <button class="play" id="startBtn">play</button>
+      <button class="pause" id="pauseBtn">pause</button>
+      <button class="reset" id="resetBTN">reset</button>
     </div>
 
-
-
-
-
-
-
     <script type="module" src="app.js"></script>
-</body>
+  </body>
 </html>
