@@ -1,2 +1,3 @@
 # StopWatch-Project
-new project with setinterval 
+this project improve my javascript ability, keep going <br>
+I use Pure HTML, Css  and Javascript concepts. 
