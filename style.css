@@ -5,7 +5,7 @@ body {
   justify-content: center;
   height: 100vh;
   margin: 0;
-  font-family: Arial, sans-serif;
+  background-color: #e0fbfc;
 }
 
 .stopwatch {
@@ -13,17 +13,68 @@ body {
 }
 
 .show-hours {
-  font-size: 2em;
-  margin-bottom: 10px;
-  border:5px solid black;
-
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  background-color: black;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  padding:3rem 4rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  border: 5px solid black;
+  font-family: Arial, sans-serif; /* Sabit bir font kullanabilirsiniz */
 }
+.show-hours span {
+  color: #fff;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
+    0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
 
+  font-family: "Orbitron", sans-serif;
+  font-size: 3rem;
+  width: 70px; /* Örnek değer, ihtiyaca göre ayarlayabilirsiniz */
+  display: inline-block;
+  text-align: center;
+}
+h1{
+    
+    display: flex;
+    flex-direction: row;    
+    align-items: center;
+    justify-content: center;
+    background-color:#0fa;
+    width:100px;
+    height:100px;
+    border-radius: 50%;
+}
+h1 i{
+    
+    font-size: 5rem;
+    color:#22223b;
+}
+.controls{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:1rem;
+}
 .controls button {
   font-size: 1em;
   margin: 5px;
   padding: 8px 15px;
   cursor: pointer;
+  border-radius: 20px;
+  border:none;
+  width:150px;
+}
+.controls button i {
+  font-size: 2rem;
+}
+.controls button:hover{
+    opacity:.5;
 }
 
 .controls button#startBtn {
@@ -37,6 +88,18 @@ body {
 }
 
 .controls button#resetBtn {
-  background-color: #008CBA;
+  background-color: #008cba;
   color: white;
+}
+
+@media (max-width: 768px) {
+    .show-hours{
+padding:3rem 2rem;
+margin-bottom: 2rem;
+
+    }
+    .show-hours span{
+        font-size: 2rem;
+  width: 40px;
+    }
 }
